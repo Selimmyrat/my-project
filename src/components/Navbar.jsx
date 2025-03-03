@@ -11,6 +11,7 @@ import { useState } from "react";
 
 function Navbar() {
   const [isOn, setIsOn] = useState(false);
+  console.log("isOn", isOn);
 
   return (
     <div className="font-albert static top-0 w-full mx-auto h-16 text-black items-center bg-white shadow-sm content-center">
@@ -20,8 +21,8 @@ function Navbar() {
         </Link>
         <div
           className={`md:static absolute md:min-h-fit min-h-screen left-0 top-[64px] md:w-auto w-64 bg-white p-5 transition-all duration-300 ${
-            isOn ? "left-0" : "-left-64"
-          }`}
+            isOn ? "flex" : "hidden"
+          } md:flex`}
         >
           <div className="flex md:flex-row flex-col gap-4 text-xs tracking-[.7px] md:items-center">
             <NavLink
