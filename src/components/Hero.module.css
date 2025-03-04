@@ -1,0 +1,15 @@
+.customDots{
+  bottom: 15px !important;
+}
+
+.customDots li{
+  margin-right: 18px !important;
+}
+
+.customDots li button::before {
+  content: "" !important;
+  border: 1px solid black !important;
+  width: 2.3rem !important;
+  height: 0.1rem !important;
+  background-color: black;
+}
